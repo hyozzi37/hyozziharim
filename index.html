@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="KO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+
+    <link rel="stylesheet" href="css\default.css" />
+    <link rel="stylesheet" href="css\style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 800px)"
+      href="css\media.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="inner flex">
+        <h1>
+          <a href="index.html"><img src="images\logo.png" alt="logo" /></a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#">BRAND</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+          </ul>
+        </nav>
+        <div class="mo_menu">
+          <div id="openSlideMenu" class="hamburger">
+            <a href="#"><img src="images\hamburger_icon.png" /></a>
+          </div>
+          <!--openSlideMenu-->
+          <!--hamburger-->
+          <div id="slideMenu" class="slide">
+            <div id="closeSlideMenu">
+              <i class="xi-close-thin xi-2x"></i>
+              <span class="hidden">닫기</span>
+            </div>
+            <!--closeSlideMenu-->
+            <ul class="nav">
+              <li><a href="#">BRAND</a></li>
+              <li><a href="#">PRODUCT</a></li>
+              <li><a href="#">EVENT</a></li>
+              <li><a href="#">COMMUNITY</a></li>
+            </ul>
+            <ul class="mo_utill">
+              <li><a href="#">CART</a></li>
+              <li><a href="#">LOGIN</a></li>
+            </ul>
+          </div>
+          <!--slideMenu-->
+        </div>
+        <!--mo_menu-->
+        <div class="utill">
+          <ul>
+            <li><a href="">LOGIN</a></li>
+            <li>
+              <a href=""><img src="images\cart_icon.png" alt="장바구니" /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images\harim_logo.png" alt="하림공식홈페이지"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!--utill-->
+      </div>
+      <!--inner flex-->
+    </header>
+    <script src="js\slide.js"></script>
+  </body>
+</html>

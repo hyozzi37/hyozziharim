@@ -1,0 +1,103 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between; /* 내부 요소 사이를 최대한 넓게 설정 */
+  align-items: center; /* 수직 방향 가운데 정렬 */
+}
+
+header .inner {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding-right: 20px;
+}
+
+header h1 img {
+  width: 200px;
+}
+
+header nav ul {
+  display: none;
+}
+
+header .hamburger {
+  display: flex;
+  align-items: center; /* 햄버거 아이콘과 텍스트를 수직 방향으로 가운데 정렬 */
+  margin-top: 14px;
+}
+
+header .hamburger img {
+  width: 50px;
+}
+
+header .utill {
+  display: none;
+}
+
+/*슬라이드 메뉴*/
+
+#openSlideMenu {
+  padding-top: 1.2rem;
+  padding-left: 1.2rem;
+  cursor: pointer;
+}
+
+#closeSlideMenu {
+  padding-top: 1.2rem;
+  padding-left: 1.2rem;
+  cursor: pointer;
+}
+
+#slideMenu {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  background-color: #f0e5af;
+  -webkit-transition: right 0.3s;
+  -moz-transition: right 0.3s;
+  -ms-transition: right 0.3s;
+  -o-transition: right 0.3s;
+  transition: right 0.3s;
+}
+
+#slideMenu::after {
+  width: 100%;
+  height: 2px;
+  border-top: 1px solid #333;
+  position: absolute;
+  top: 300px;
+  left: 0;
+}
+
+#slideMenu ul li {
+  padding-top: 1.05rem;
+}
+
+#slideMenu.on {
+  right: 0;
+}
+
+.mo_menu {
+  display: block;
+}
+
+.xi-close-thin {
+  position: absolute;
+  right: 20px;
+}
+
+.mo_menu .nav {
+  margin-top: 80px;
+}
+
+.mo_menu .mo_utill {
+  margin-top: 50px;
+}
