@@ -2,13 +2,16 @@ body {
   width: 1920px;
   font-family: "Noto Sans KR", sans-serif;
   color: #333;
+  font-size: 16px;
 }
+
+/*header*/
 
 header {
   width: 100%;
   height: 100px;
   background-color: #fff;
-  font-size: 16px;
+  position: fixed;
 }
 
 header a:hover {
@@ -77,4 +80,153 @@ header .utill li:nth-child(3) img {
 
 .mo_menu {
   display: none;
+}
+
+/*main*/
+
+/*section1*/
+
+main .mainvisual {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/pc_main_bg.png) no-repeat;
+  background-size: 1920px 980px;
+  padding-top: 100px;
+}
+
+main .mainvisual h2 {
+  font-size: 45px;
+}
+
+main .mainvisual p strong {
+  font-size: 80px;
+}
+
+main .mainvisual p a {
+  font-size: 20px;
+  border: 2px solid #333;
+  display: block;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  margin-top: 50px;
+}
+
+main .mainvisual p a:hover {
+  background-color: #fff;
+  border: 2px solid #fff;
+  text-decoration: underline;
+}
+
+main .mainvisual .inner {
+  padding-top: 100px;
+  width: 1300px;
+  margin: auto;
+  line-height: 80px;
+}
+
+/*bestSeller*/
+
+.bestTitle {
+  float: left; /* Remove float property */
+}
+
+.bestTitle h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.bestTitle p {
+  font-size: 20px;
+}
+
+.bestSeller {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90vh;
+  background: #f0e5af;
+  padding-top: 150px;
+}
+
+.bestSeller ul {
+  display: flex;
+  background: #fff;
+  width: 1300px;
+  height: 580px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.bestSeller ul li {
+  padding: 70px 0 0 50px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bestSeller ul li .price {
+  font-size: 14px;
+  color: #c8c8c8;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+.bestSeller ul li .sale strong {
+  font-size: 18px;
+  color: tomato;
+}
+
+.bestSeller ul li .sale {
+  font-size: 17px;
+}
+
+.bestSeller ul li img {
+  width: 400px;
+}
+
+.bestSeller ul li:hover {
+  font-weight: 900;
+}
+
+.bestSeller .slick-slider {
+  display: block;
+}
+
+.slick-arrow {
+  z-index: 50;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  font-size: 0; /*font없애는법*/
+  /*color: transparent; font없애는법
+  text-indent: -9999px; font없애는법
+  overflow: hidden; font없애는법*/
+}
+/*제이쿼리에서 만들어준 자동버튼*/
+
+.slick-prev {
+  left: 0;
+} /*버튼 왼쪽*/
+
+.slick-next {
+  right: 0;
+} /*버튼 오른쪽*/
+
+.slick-arrow:before {
+  font-family: xeicon; /*이걸 해줘야 보임*/
+}
+
+.slick-prev:before {
+  content: "\e93d";
+  font-size: 50px;
+}
+
+.slick-next:before {
+  content: "\e940";
+  font-size: 50px;
 }
