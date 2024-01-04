@@ -12,6 +12,7 @@ header {
   height: 100px;
   background-color: #fff;
   position: fixed;
+  z-index: 2000;
 }
 
 header a:hover {
@@ -229,4 +230,128 @@ main .mainvisual .inner {
 .slick-next:before {
   content: "\e940";
   font-size: 50px;
+}
+
+/*section3*/
+
+.sns_pc {
+  width: 100%;
+  height: 750px;
+  background: url(../images/sns_bg.png) no-repeat;
+  background-size: 1920px 750px;
+  display: block;
+}
+
+.sns_pc .inner {
+  width: 1300px;
+  margin: auto;
+}
+
+.sns_pc .inner .snsTitle {
+  padding-top: 80px;
+  float: left;
+}
+
+.snsTitle h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.snsTitle p {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.sns_pc .inner .icon {
+  display: flex;
+}
+
+.sns_pc .inner ul li {
+  padding-right: 20px;
+}
+
+.sns_pc .inner .icon li img {
+  width: 30px;
+  height: 30px;
+}
+
+.youtube {
+  width: 600px;
+  height: 400px;
+  float: right;
+  padding-top: 80px;
+  margin-bottom: 10px;
+}
+
+.snsPreview {
+  display: flex;
+  width: 100%;
+}
+
+.snsPreview li {
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.sns_pc .inner .snsPreview li img {
+  width: 300px;
+  height: 300px;
+  transition: all 0.2s linear;
+}
+
+.sns_pc .inner .snsPreview li img:hover {
+  transform: scale(1.4);
+}
+
+.sns_mo {
+  display: none;
+}
+
+footer {
+  width: 1920px;
+  height: 200px;
+  background: #333;
+  color: #fff;
+  font-size: 10px;
+}
+
+.footer_inner {
+  width: 1300px;
+  margin: auto;
+  position: relative;
+  padding-top: 30px;
+}
+
+.footer_inner ul {
+  display: flex;
+  padding: 20px 0 20px;
+}
+
+.footer_inner ul li {
+  font-weight: bold;
+}
+
+.footer_inner ul li:first-child {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.footer_inner ul li:nth-child(2) {
+  font-size: 14px;
+}
+
+.footer_inner .address {
+  padding-bottom: 20px;
+}
+
+.footer_inner .ft_logo img {
+  width: 80px;
+}
+
+.footer_inner .ft_logo {
+  position: absolute;
+  right: 40px;
+  top: 50px;
 }

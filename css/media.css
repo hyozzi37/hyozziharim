@@ -179,3 +179,49 @@ main .mainvisual p a {
 .bestSlide li a img {
   width: 300px;
 }
+
+.sns_pc {
+  display: none;
+}
+
+.sns_mo {
+  display: block;
+  width: 100%;
+  height: 600px;
+  margin-top: 200px;
+  background: #f0e5af;
+}
+
+.sns_mo h2 {
+  text-align: center;
+  padding: 50px 0 50px;
+  font-size: 30px;
+}
+
+.sns_mo ul {
+  width: 100%;
+  height: 400px;
+}
+
+.sns_mo ul li a {
+  width: 400px;
+  height: 400px;
+}
+
+.snsPreview_mo img {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+footer {
+  width: 800px;
+}
+
+.footer_inner {
+  width: 644px;
+}
+
+footer .address {
+  line-height: 2;
+}

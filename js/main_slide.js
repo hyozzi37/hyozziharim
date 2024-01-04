@@ -7,6 +7,7 @@ $(document).ready(function () {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
+      autoplaySpeed: 2000,
     });
   }
 
@@ -29,4 +30,11 @@ $(document).ready(function () {
       destroySlider();
     }
   });
+});
+
+$(".snsPreview_mo").slick({
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: "linear",
 });
